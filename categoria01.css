@@ -1,0 +1,312 @@
+/* styles.css */
+body {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin-top: 50px;
+    background-color: #00000088;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+#catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    max-width: 300px;
+    position: relative;
+}
+
+.product img {
+    max-width: 100%;
+}
+
+.whatsapp-button {
+    background-color: #25D366;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+}
+
+/* Adicione este estilo ao final do arquivo CSS */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para a navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #128C7E;
+}
+
+/* Estilos para a barra de navegação */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #128C7E;
+}
+
+/* Estilos para o menu hambúrguer */
+.menu-toggle {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.change .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.change .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Estilos para o menu lateral */
+.sidebar {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+    z-index: 2;
+}
+
+.sidebar-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-links li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: block;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #128C7E;
+}
+
+.sidebar.active {
+    width: 250px;
+}
+
+/* Estilos para o botão "Fechar" */
+.close-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    z-index: 3;
+    display: none;
+}
+
+.close-icon {
+    font-size: 24px;
+}
+
+/* Estilos para mostrar o botão "Fechar" quando o menu está aberto */
+.sidebar.active + .close-btn {
+    display: block;
+}
+
+/* Estilos para o submenu de categorias */
+.submenu-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: #fff; /* Cor de fundo desejada */
+    border: 1px solid #ccc; /* Borda opcional */
+    padding: 10px; /* Espaçamento interno opcional */
+}
+
+.submenu-links li {
+    margin-bottom: 10px;
+}
+
+.submenu-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    display: block;
+}
+
+/* Mostrar o submenu quando o item "Categorias" for hover */
+.submenu:hover .submenu-links {
+    display: block;
+}
+
+/* Estilos para a barra de navegação fixa */
+.navbar {
+    position: fixed; /* Torna a barra de navegação fixa */
+    width: 100%; /* Ocupa a largura total da tela */
+    top: 0; /* Fixa a barra de navegação no topo */
+    z-index: 1; /* Coloca a barra de navegação acima do conteúdo */
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+/* Estilos para o conteúdo principal para evitar sobreposição com a barra de navegação */
+main {
+    margin-top: 60px; /* Ajuste conforme a altura da barra de navegação */
+    padding: 20px;
+}
+
+
+/* Estilos para o submenu de categorias */
+.submenu-item {
+    position: relative; /* Para posicionar o submenu em relação a este item */
+}
+
+.submenu-links {
+    border-radius: 10px;    
+    list-style: none;
+    display: none; /* Oculta o submenu por padrão */
+    position: absolute;
+    top: 100%; /* Posiciona abaixo do item "Categorias" */
+    left: 0;
+    background-color: #ffffff; /* Cor de fundo desejada */
+    border: 1px solid #ccc; /* Borda opcional */
+}
+
+.submenu-links>li>a>img {
+  width: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.submenu-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 17px;
+    display: block;
+}
+
+/* Mostrar o submenu quando o item "Categorias" for hover */
+.submenu-item:hover .submenu-links {
+    display: block;
+}
+
+.nav-links{
+    margin-right: 40px;
+}
+

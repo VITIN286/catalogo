@@ -1,5 +1,5 @@
 # Catalogo
 
-Projetinho freelancer para cliente de Aparecida de Goiânia
+Projetinho destinado ao portifólio
 
-Veja agora ->
+Veja agora -> https://vitin286.github.io/catalogo/
